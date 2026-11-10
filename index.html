@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kagurazaka &amp; Ikebukuro for Mike</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="A day in Kagurazaka and Ikebukuro for Mike Fittler, his son and his mother: old lanes, temples and local lunch in Kagurazaka in the morning, then Pokémon at Sunshine City — Thursday 10 December, guided by Yuuki.">
+<meta property="og:title" content="Kagurazaka &amp; Ikebukuro for Mike">
+<meta property="og:description" content="Old Tokyo lanes in the morning, Pokémon in Ikebukuro after lunch — Thursday 10 December, 10:30 to 15:30.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23D9342B%22/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1EFEA;--ink:#121212;--red:#D9342B;--mu:#5D5A54}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;font:16px/1.5 Archivo,"Noto Sans JP",sans-serif}
+.col{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,.big,.tn,.no{font-family:Archivo,"Noto Sans JP",sans-serif;font-stretch:62%;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}
+.top{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:13px;letter-spacing:.14em;padding:18px 0 8px;border-bottom:4px solid var(--ink)}.topr{display:flex;align-items:center;gap:10px}
+h1{margin:14px 0 14px;font-size:clamp(44px,13vw,72px);line-height:.92}h1 em{font-style:normal;color:var(--red);border-bottom:.06em solid var(--red);padding-bottom:.02em}
+.hero{position:relative}.hero img{display:block;width:100%;height:auto}
+.vt{position:absolute;left:14px;top:0;background:var(--red);color:#fff;font:900 34px/1.05 "Noto Sans JP",sans-serif;writing-mode:vertical-rl;padding:12px 10px;letter-spacing:.06em}
+.hb{background:var(--ink);color:#fff;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 16px;font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase}.hb b{color:#FF7A6E}
+h2.map{margin:30px 0 10px;font-size:34px}
+.maphd{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:30px 0 10px}.maphd h2.map{margin:0}
+#map{display:block;width:100%;height:auto;border:4px solid var(--ink)}
+#map text{font-family:Archivo,sans-serif;pointer-events:none}
+.pin{cursor:pointer}.pin .lbl{display:none}.pin:hover .lbl,.pin:focus .lbl,.pin.on .lbl{display:block}.pin:hover .fr,.pin.on .fr{stroke:#D9342B}
+.card.hit{outline:4px solid var(--red);outline-offset:6px}
+.lg{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0 0;font-size:14px;font-weight:700}.lg i{display:inline-block;width:14px;height:14px;background:var(--ink);margin-right:6px;vertical-align:-2px}.lg i.r{background:var(--red)}
+.bar{display:flex;justify-content:space-between;align-items:baseline;margin:34px 0 4px}.bar h2{margin:0;font-size:30px}.bar.r h2{color:var(--red)}.bar span{font-weight:800;font-size:15px}
+.gp{margin:0 0 10px;font-size:15px;color:var(--mu)}
+.wall{display:grid;gap:3px;grid-template-columns:1fr 1fr}.wall.w3{grid-template-columns:repeat(3,1fr)}
+.tile{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;color:#fff;text-decoration:none;background:#222}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.85))}
+.no{position:absolute;left:0;top:0;z-index:2;background:var(--ink);padding:3px 9px;font-size:28px;line-height:1.1}.tile.r .no{background:var(--red)}
+.tn,.tt{position:absolute;left:8px;z-index:2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tt{right:8px;bottom:28px;width:max-content;max-width:calc(100% - 16px);background:var(--red);color:#fff;font:900 13px/1 Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:5px 7px}.tile.r .tt{background:#fff;color:var(--ink)}.tn{right:8px;bottom:8px;font-size:15px;line-height:1;font-weight:800;text-transform:none;font-stretch:100%}.wall.w3 .tt{font-size:11px}.wall.w3 .tn{font-size:13px}
+.card{padding:22px 0 24px;border-bottom:4px solid var(--ink);scroll-margin-top:8px}
+.hd{display:flex;gap:12px;align-items:center;margin-bottom:10px}.big{font-size:72px;line-height:.85;color:var(--red)}.card.r .big{color:var(--ink)}
+.hd h3{margin:6px 0 0;font-size:22px;line-height:1}.genre{display:inline-block;background:var(--red);color:#fff;font:900 14px/1 Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px}.card.r .genre{background:var(--ink)}
+.ph{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.jp{margin:14px 0 6px;font:900 28px/1.2 "Noto Sans JP",sans-serif}
+.tx{margin:0 0 10px;font-size:16px}
+.strip{display:flex;flex-wrap:wrap;gap:4px 0;margin:0;background:var(--ink);color:#fff;padding:9px 10px;font-size:14px;font-weight:700;line-height:1.3;white-space:nowrap}.strip .today{font-weight:800}
+.hrs{margin:6px 0 0;font-size:13px;color:var(--mu)}
+.strip span{display:inline-flex;align-items:center;gap:6px}.strip span+span:before{content:"";display:inline-block;width:4px;height:4px;background:#FF7A6E;margin:0 8px;flex:none}
+.strip svg{flex:none;color:#FF7A6E}
+.bt{display:flex;gap:6px;margin-top:10px}.bt>*{flex:1 1 0;min-width:0}
+.btn{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 8px;background:var(--ink);color:#fff;text-decoration:none;font:800 13px Archivo,sans-serif;letter-spacing:.04em;text-transform:uppercase;border:0;cursor:pointer;white-space:nowrap}.btn i{font-style:normal;color:#FF7A6E}
+.know{background:var(--ink);color:#fff;margin-top:34px;padding:30px 0 34px}.know h2{margin:0 0 10px;font-size:34px;color:#fff}.know ul{margin:0;padding-left:20px}.know li{margin:8px 0}.know a{color:#FF7A6E;font-weight:800}
+.crd{max-width:640px;margin:0 auto;padding-block:18px 44px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}.crd summary{cursor:pointer;font:800 13px/1 Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);padding:10px 0}.crd summary::-webkit-details-marker{display:none}.crd summary:before{content:"+ "}.crd[open] summary:before{content:"- "}
+.cr{padding:8px 0 0;max-width:640px;margin:0 auto;font-size:13px;color:var(--mu)}.cr a{color:var(--mu)}
+@media(min-width:700px){.col{max-width:760px}}
+.tl{list-style:none;margin:0;padding:0;border-top:4px solid var(--ink)}.tl li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #c9c5bc}.tl b{flex:none;width:56px;font:900 18px/1.2 Archivo,sans-serif;color:var(--red)}.tl span{font-size:15px}.tl em{display:block;font-style:normal;color:var(--mu);font-size:14px}.tl a{color:inherit;font-weight:800}
+.lunch{background:var(--ink);color:#fff;margin-top:34px;padding:30px 0 34px}.lunch h2{margin:0 0 10px;font-size:34px;color:#fff}.lunch h2 em{font-style:normal;color:var(--red)}.lunch p{margin:0 0 6px}
+.intro.e{position:relative;margin-top:18px}.ie-for{margin:0 0 6px 0;font-size:11.5px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}.ie-blk{border-top:3px solid var(--ink);padding:12px 0 14px}.ie-blk:last-child{border-bottom:1px solid #D8D3C8}.ie-blk h4{margin:0 0 7px;font-size:16px;font-weight:900;font-stretch:70%;letter-spacing:.02em;text-transform:uppercase;display:flex;align-items:baseline;gap:9px}.ie-blk h4 i{font-style:normal;color:var(--red);font-size:13px}.ie-blk p{margin:0;font-size:14.5px;line-height:1.6;color:#2A2925}.ie-chips{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 9px}.ie-chips span{font-weight:900;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;background:var(--ink);color:#fff;padding:6px 9px}.ie-blk p b.t{border-bottom:3px solid var(--red);white-space:nowrap}
+.sharebtn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;color:#121212;background:transparent;border:1.5px solid #121212;border-radius:50%;cursor:pointer}.sharebtn svg{width:18px;height:18px;display:block}.sharebtn .ic-check{display:none}.sharebtn.done{background:var(--red);border-color:var(--red);color:#fff}.sharebtn.done .ic-link{display:none}.sharebtn.done .ic-check{display:block}.hd-share{width:34px;height:34px;background:#fff;flex:none}.hd-share svg{width:16px;height:16px}
+.ltiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px;align-items:stretch}
+.ltile{position:relative;display:block;width:100%;text-align:left;font:inherit;color:var(--ink);background:#fff;border:1px solid #e6e2da;border-radius:12px;overflow:hidden;padding:0;cursor:pointer}
+.ltile img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#2a2a2a}
+.ltile .lcb{position:absolute;left:0;right:0;bottom:0;display:block;padding:8px 10px 9px;background:rgba(0,0,0,.62)}
+.ltile .lgn{display:block;font-size:10.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#ffb0a0}
+.ltile b{display:block;font-size:15px;line-height:1.3;margin-top:2px;color:#fff}
+.ltile:hover,.ltile:focus-visible{border-color:var(--ink)}
+.lasof{font-size:12px;color:#b9b4a8;margin-top:12px}
+.lpop{border:0;border-radius:14px;padding:0;width:min(92vw,420px);max-height:88vh;max-height:88svh;overflow:auto;color:var(--ink);background:#fff;margin:auto}
+.lpop::backdrop{background:rgba(0,0,0,.55)}
+.lpop .pimg{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.lpop .pbody{padding:16px 18px 20px}
+.lpop .lgn{font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.lpop h3{font-size:22px;line-height:1.25;font-weight:900;margin:2px 0 4px;text-transform:none;letter-spacing:0}
+.lpop .ljp{font-family:"Noto Sans JP",sans-serif;font-weight:700;font-size:14px;margin:2px 0 0}
+.lpop .pt{font-size:15px;line-height:1.6;margin-top:10px}
+.lpop .rt{font-size:13px;color:var(--mu);margin-top:8px;line-height:1.6}.pp{font-size:13px;margin-top:6px}.pp .py{color:var(--red);font-weight:900;letter-spacing:.05em;margin-right:7px}
+.lpop .lnote{margin-top:12px;background:#fdf3e0;border-left:4px solid var(--red);padding:10px 12px;font-size:14px;line-height:1.55}
+.lpop .pl{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.lpop .pl a{display:inline-block;font-size:13px;font-weight:700;text-decoration:none;color:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:6px 14px}
+.lpop .pc{margin-top:14px;font-size:11px;color:#999;line-height:1.5}
+.lpop .pclose{position:absolute;right:10px;top:10px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.92);font:inherit;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25);z-index:2}
+</style>
+</head>
+<body>
+<div class="col">
+<div class="top">
+<span>GUEST GUIDE</span>
+<span class="topr">
+<span>KAGURAZAKA &amp; IKEBUKURO &middot; 6 PLACES</span>
+<button type="button" class="sharebtn hd-share" id="copyLink" aria-label="Copy link to this page" title="Copy link">
+<svg class="ic-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V4"/><path d="M7.5 8L12 3.5L16.5 8"/><path d="M5 13v7h14v-7"/></svg>
+<svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+</button>
+</span>
+</div>
+<h1>Places to visit in <em>Kagurazaka</em> &amp; Ikebukuro</h1>
+</div>
+<div class="col" style="padding:0">
+<div class="hero">
+<img src="img/hero.jpg" alt="Kagurazaka in the evening">
+<div class="vt">神楽坂</div>
+</div>
+<div class="hb">
+<span>Thu 10 Dec &middot; 10:30 to 15:30</span>
+<b>Meet at JR Kyushu Hotel Blossom Shinjuku</b>
+</div>
+</div>
+<div class="col">
+<section class="intro e">
+<p class="ie-for">Made for Mike &middot; for you, your son and your mother &middot; Guide: Yuuki &middot; Length: 5 hours</p>
+<div class="ie-blk">
+<h4><i>01</i>The plan</h4>
+<p>Thursday 10 December. I meet the three of you at the <b class="t">JR Kyushu Hotel Blossom Shinjuku, 10:30</b>. The morning is Kagurazaka &mdash; temples, back lanes and local shops &mdash; then lunch there, the train to Ikebukuro for Pok&eacute;mon at Sunshine City, and we finish back in <b class="t">Shinjuku, 15:30</b>.</p>
+</div>
+<div class="ie-blk">
+<h4><i>02</i>What the day is for</h4>
+<div class="ie-chips">
+<span>History &amp; old streets</span>
+<span>Traditional buildings</span>
+<span>Local shops</span>
+<span>Learning the trains</span>
+<span>Pok&eacute;mon</span>
+</div>
+<p>Kagurazaka is the grown-ups&rsquo; half of the day &mdash; history, culture and the lanes of an old geisha district, at an easy pace. Ikebukuro is for your son. And in between, the trains themselves: by the end of the day, the ticket gates and the Suica tap will feel like yours.</p>
+</div>
+<div class="ie-blk">
+<h4><i>03</i>On the day</h4>
+<p>The plan is set; the pace is ours. We linger where something catches your eye, sit down whenever we want a rest, and choose lunch together when we get there.</p>
+</div>
+</section>
+<div class="bar">
+<h2>THE DAY</h2>
+<span>10:30 &ndash; 15:30</span>
+</div>
+<p class="gp">One plan, in the order we will live it. Times can breathe a little on the day.</p>
+<ul class="tl">
+<li><b>10:30</b><span>Meet at JR Kyushu Hotel Blossom Shinjuku<em>I will be waiting in the lobby. First job: the trains &mdash; I will show you the ticket gates and how Suica works.</em></span></li>
+<li><b>11:00</b><span>Kagurazaka on foot<em>A temple, a shrine and the stone-paved back lanes &mdash; places 01 to 03 below. Unhurried, with rests along the way.</em></span></li>
+<li><b>12:00</b><span>Lunch in Kagurazaka<em>We choose together from the local places under &ldquo;Where we eat&rdquo; &mdash; by appetite, and by queue.</em></span></li>
+<li><b>13:00</b><span>Train to Ikebukuro<em>A direct ride of about 15 minutes &mdash; gates, platforms and Suica in action, with me beside you.</em></span></li>
+<li><b>13:30</b><span>Sunshine City, Ikebukuro<em><a href="#p4">04 Pok&eacute;mon Center Mega Tokyo</a>, <a href="#p5">05 Pok&eacute;mon GO Lab.</a> and <a href="#p6">06 Pikachu Sweets</a> &mdash; and the mall&rsquo;s other shops around them.</em></span></li>
+<li><b>15:00</b><span>Train back towards Shinjuku<em>The same gates as this morning, only now they are familiar.</em></span></li>
+<li><b>15:30</b><span>Finish in Shinjuku<em>We end around Shinjuku, close to your hotel.</em></span></li>
+</ul>
+<div class="maphd">
+<h2 class="map">The map</h2>
+</div>
+<p class="gp">The Kagurazaka morning in one sketch. Tap a pin to see the name, tap again to jump to the place.</p>
+<svg id="map" viewBox="195 -6 420 478" role="img" aria-label="Simple sketch map of the three Kagurazaka places">
+<defs>
+<clipPath id="pc1"><rect x="-21" y="-49" width="42" height="39" rx="2"/></clipPath>
+<clipPath id="pc2"><rect x="-21" y="-49" width="42" height="39" rx="2"/></clipPath>
+<clipPath id="pc3"><rect x="-21" y="-49" width="42" height="39" rx="2"/></clipPath>
+</defs>
+<rect x="150" y="-60" width="520" height="600" fill="#F6F1E6"/>
+<line x1="70" y1="-60" x2="70" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="205" y1="-60" x2="205" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="340" y1="-60" x2="340" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="470" y1="-60" x2="470" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="560" y1="-60" x2="560" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="70" x2="670" y2="70" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="200" x2="670" y2="200" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="330" x2="670" y2="330" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="470" x2="670" y2="470" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="600" x2="670" y2="600" stroke="#fff" stroke-width="16"/>
+<rect x="355" y="313" width="140" height="44" fill="#E4E0D6"/>
+<circle cx="425" cy="249" r="177" fill="none" stroke="#121212" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="425" y="333" text-anchor="middle" font-size="14" font-weight="800" fill="#121212">KAGURAZAKA</text>
+<text x="425" y="350" text-anchor="middle" font-size="14" font-weight="800" fill="#121212">STATION</text>
+<text x="425" y="446" text-anchor="middle" font-size="13" font-weight="700" fill="#5D5A54">dashed circle: the old town, a short walk across</text>
+<a class="pin" href="#p1" data-n="1">
+<g transform="translate(330 150)">
+<polygon points="-6,-8 6,-8 0,0" fill="#121212"/>
+<rect class="fr" x="-23" y="-64" width="46" height="56" rx="3" fill="#121212" stroke="#fff" stroke-width="1.5"/>
+<image href="img/zenkokuji.jpg" x="-21" y="-49" width="42" height="39" preserveAspectRatio="xMidYMid slice" clip-path="url(#pc1)"/>
+<text y="-52" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">1</text>
+<g class="lbl"><rect x="-55" y="-94" width="110" height="26" fill="#121212"/><text y="-76" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">Zenkoku-ji</text></g>
+</g>
+</a>
+<a class="pin" href="#p2" data-n="2">
+<g transform="translate(480 265)">
+<polygon points="-6,-8 6,-8 0,0" fill="#121212"/>
+<rect class="fr" x="-23" y="-64" width="46" height="56" rx="3" fill="#121212" stroke="#fff" stroke-width="1.5"/>
+<image href="img/akagi.jpg" x="-21" y="-49" width="42" height="39" preserveAspectRatio="xMidYMid slice" clip-path="url(#pc2)"/>
+<text y="-52" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">2</text>
+<g class="lbl"><rect x="-60" y="-94" width="120" height="26" fill="#121212"/><text y="-76" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">Akagi Shrine</text></g>
+</g>
+</a>
+<a class="pin" href="#p3" data-n="3">
+<g transform="translate(350 385)">
+<polygon points="-6,-8 6,-8 0,0" fill="#121212"/>
+<rect class="fr" x="-23" y="-64" width="46" height="56" rx="3" fill="#121212" stroke="#fff" stroke-width="1.5"/>
+<image href="img/lanes.jpg" x="-21" y="-49" width="42" height="39" preserveAspectRatio="xMidYMid slice" clip-path="url(#pc3)"/>
+<text y="-52" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">3</text>
+<g class="lbl"><rect x="-65" y="-94" width="130" height="26" fill="#121212"/><text y="-76" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">Hyogo Yokocho</text></g>
+</g>
+</a>
+</svg>
+<div class="lg">
+<span><i></i>The three Kagurazaka places are a few minutes apart on foot</span>
+<span><i class="r"></i>Ikebukuro comes after lunch &mdash; places 04 to 06 are inside Sunshine City</span>
+</div>
+<section>
+<div class="bar">
+<h2>TEMPLE, SHRINE, LANES</h2>
+<span>1-3</span>
+</div>
+<div class="wall w3">
+<a class="tile" href="#p1">
+<img src="img/zenkokuji.jpg" alt="" loading="lazy">
+<b class="no">01</b>
+<span class="tt">Temple</span>
+<span class="tn">ZENKOKU-JI</span>
+</a>
+<a class="tile" href="#p2">
+<img src="img/akagi.jpg" alt="" loading="lazy">
+<b class="no">02</b>
+<span class="tt">Shrine</span>
+<span class="tn">AKAGI SHRINE</span>
+</a>
+<a class="tile" href="#p3">
+<img src="img/lanes.jpg" alt="" loading="lazy">
+<b class="no">03</b>
+<span class="tt">Old lanes</span>
+<span class="tn">THE BACK LANES</span>
+</a>
+</div>
+</section>
+<section>
+<div class="bar r">
+<h2>POK&Eacute;MON AT SUNSHINE CITY</h2>
+<span>4-6</span>
+</div>
+<div class="wall w3">
+<a class="tile r" href="#p4">
+<img src="img/mega.jpg" alt="" loading="lazy">
+<b class="no">04</b>
+<span class="tt">Pok&eacute;mon shop</span>
+<span class="tn">MEGA TOKYO</span>
+</a>
+<a class="tile r" href="#p5">
+<img src="img/golab.jpg" alt="" loading="lazy">
+<b class="no">05</b>
+<span class="tt">Pok&eacute;mon GO</span>
+<span class="tn">GO LAB.</span>
+</a>
+<a class="tile r" href="#p6">
+<img src="img/sweets.jpg" alt="" loading="lazy">
+<b class="no">06</b>
+<span class="tt">Sweets to go</span>
+<span class="tn">PIKACHU SWEETS</span>
+</a>
+</div>
+</section>
+<article class="card" id="p1">
+<div class="hd">
+<span class="big">01</span>
+<div>
+<span class="genre">Temple &middot; Bishamonten</span>
+<h3>ZENKOKU-JI</h3>
+</div>
+</div>
+<img class="ph" src="img/zenkokuji.jpg" alt="The Bishamonten statue at Zenkoku-ji" loading="lazy">
+<p class="jp" lang="ja">善國寺</p>
+<p class="tx">The temple that watches over Kagurazaka. Founded in 1595, it enshrines Bishamonten &mdash; the guardian god in the photo &mdash; counted among the Shinjuku Yamanote Seven Lucky Gods. Look at the gate: where most temples keep guardian dogs, this one keeps stone tigers.</p>
+<p class="strip">
+<span><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 4.5V8l2.5 1.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><b class="today">Gates 7:00 to 19:00</b></span>
+</p>
+<p class="hrs">Gates 7:00 to 19:00; the hall is open 9:00 to 17:00 (temple listing on Enjoy Tokyo, checked on 11 Nov 2026)</p>
+<div class="bt">
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Zenkoku-ji+Kagurazaka">Google Maps <i>&rarr;</i></a>
+</div>
+</article>
+<article class="card" id="p2">
+<div class="hd">
+<span class="big">02</span>
+<div>
+<span class="genre">Shrine &middot; old and new</span>
+<h3>AKAGI SHRINE</h3>
+</div>
+</div>
+<img class="ph" src="img/akagi.jpg" alt="The torii gate of Akagi Shrine" loading="lazy">
+<p class="jp" lang="ja">赤城神社</p>
+<p class="tx">A shrine founded in 1300, one minute from Kagurazaka Station &mdash; and a small surprise for anyone who likes buildings: its hall was rebuilt in 2010 with glass walls, in a project supervised by architect Kengo Kuma. Seven centuries of shrine, in very modern dress.</p>
+<p class="strip">
+<span><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 4.5V8l2.5 1.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><b class="today">Grounds open 24 hours</b></span>
+</p>
+<p class="hrs">The grounds are open at all hours; the shrine office is open 9:00 to 17:00 (shrine listings, checked on 11 Nov 2026)</p>
+<div class="bt">
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Akagi+Shrine+Kagurazaka">Google Maps <i>&rarr;</i></a>
+</div>
+</article>
+<article class="card" id="p3">
+<div class="hd">
+<span class="big">03</span>
+<div>
+<span class="genre">Stone-paved back lanes</span>
+<h3>THE LANES OF KAGURAZAKA</h3>
+</div>
+</div>
+<img class="ph" src="img/lanes.jpg" alt="Hyogo Yokocho, a stone-paved lane in Kagurazaka" loading="lazy">
+<p class="jp" lang="ja">兵庫横丁・かくれんぼ横丁</p>
+<p class="tx">Step off the main slope and Kagurazaka turns into lanes: Hyogo Yokocho in the photo, and Kakurenbo Yokocho &mdash; &ldquo;hide-and-seek lane&rdquo; &mdash; nearby. Stone paving, black wooden fences, traditional restaurants behind them: what is left of the old geisha district. Hyogo Yokocho takes its name from the armoury that stood here in the days of Ushigome Castle.</p>
+<p class="strip">
+<span><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 4.5V8l2.5 1.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><b class="today">Open streets &middot; walk any time</b></span>
+</p>
+<p class="hrs">Public lanes in the Kagurazaka back streets (Shinjuku City tourism information, checked on 11 Nov 2026)</p>
+<div class="bt">
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Hyogo+Yokocho+Kagurazaka">Google Maps <i>&rarr;</i></a>
+</div>
+</article>
+<article class="card r" id="p4">
+<div class="hd">
+<span class="big">04</span>
+<div>
+<span class="genre">Pok&eacute;mon shop</span>
+<h3>POK&Eacute;MON CENTER MEGA TOKYO</h3>
+</div>
+</div>
+<img class="ph" src="img/mega.jpg" alt="The entrance of Pokémon Center Mega Tokyo" loading="lazy">
+<p class="jp" lang="ja">ポケモンセンターメガトウキョー</p>
+<p class="tx">One of the biggest Pok&eacute;mon shops in Japan, on the 2nd floor of Sunshine City&rsquo;s Alpa mall: games, cards, shelves of plush, and goods you only find here. This is your son&rsquo;s home ground &mdash; and the mall around it has floors of other shops to dip into while he hunts.</p>
+<p class="strip">
+<span><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 4.5V8l2.5 1.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><b class="today">10:00 to 20:00</b></span>
+</p>
+<p class="hrs">10:00 to 20:00, open daily (official Pok&eacute;mon Center site, checked on 11 Nov 2026)</p>
+<div class="bt">
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pokemon+Center+Mega+Tokyo">Google Maps <i>&rarr;</i></a>
+</div>
+</article>
+<article class="card r" id="p5">
+<div class="hd">
+<span class="big">05</span>
+<div>
+<span class="genre">Pok&eacute;mon GO space</span>
+<h3>POK&Eacute;MON GO LAB.</h3>
+</div>
+</div>
+<img class="ph" src="img/golab.jpg" alt="Inside Pokémon Center Mega Tokyo" loading="lazy">
+<p class="jp" lang="ja">ポケモンGOラボ</p>
+<p class="tx">Inside the Pok&eacute;mon Center sits this: the official space for Pok&eacute;mon GO players, the first of its kind. A Gym brought to life by media-art studio Rhizomatiks, life-size Professor Willow and the team leaders to pose with, and regular trade meet-ups and events. The photo shows the Pok&eacute;mon Center floor the Lab. is part of.</p>
+<p class="strip">
+<span><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 4.5V8l2.5 1.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><b class="today">10:00 to 20:00</b></span>
+</p>
+<p class="hrs">Inside Pok&eacute;mon Center Mega Tokyo, so the same hours: 10:00 to 20:00 (official Pok&eacute;mon GO site, checked on 11 Nov 2026)</p>
+<div class="bt">
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pokemon+GO+Lab+Ikebukuro">Google Maps <i>&rarr;</i></a>
+</div>
+</article>
+<article class="card r" id="p6">
+<div class="hd">
+<span class="big">06</span>
+<div>
+<span class="genre">Takeout sweets</span>
+<h3>PIKACHU SWEETS</h3>
+</div>
+</div>
+<img class="ph" src="img/sweets.jpg" alt="The entrance of Sunshine City, Ikebukuro" loading="lazy">
+<p class="jp" lang="ja">ピカチュウスイーツ by ポケモンカフェ</p>
+<p class="tx">The Pok&eacute;mon Cafe&rsquo;s takeout counter, on the same floor as the Center: Pikachu-shaped sweets and drinks to carry away. No reservation and no sitting down &mdash; just queue, pick, and eat as we wander. The photo shows Sunshine City, the building it is in.</p>
+<p class="strip">
+<span><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 4.5V8l2.5 1.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><b class="today">10:00 to 20:00</b></span>
+</p>
+<p class="hrs">10:00 to 20:00, open daily (official Pok&eacute;mon Center site, checked on 11 Nov 2026)</p>
+<div class="bt">
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pikachu+Sweets+Ikebukuro">Google Maps <i>&rarr;</i></a>
+</div>
+</article>
+</div>
+<div class="lunch" id="lunch">
+<div class="col">
+<h2><em>Where we eat</em> &mdash; we pick together</h2>
+<p>Lunch is not booked and not decided &mdash; that is the plan. These four are places Kagurazaka people use themselves: hand-made soba, set meals in a renovated old house, the famous fried-rice shop, and a terrace over the canal for when you would rather sit a while. We look, we talk, we choose. Tap a tile for details.</p>
+<div class="ltiles">
+<button type="button" class="ltile" data-pop="lpop-kyorakutei">
+<img src="img/soba.jpg" alt="Example photo: soba with tempura" loading="lazy">
+<span class="lcb"><span class="lgn">Soba &middot; hand-made</span><b>Kyorakutei</b></span>
+</button>
+<button type="button" class="ltile" data-pop="lpop-saryo">
+<img src="img/saryo.jpg" alt="Example photo: a Japanese set meal" loading="lazy">
+<span class="lcb"><span class="lgn">Set meals &middot; matcha</span><b>Kagurazaka Saryo</b></span>
+</button>
+<button type="button" class="ltile" data-pop="lpop-ryuho">
+<img src="img/ryuho.jpg" alt="Example photo: fried rice" loading="lazy">
+<span class="lcb"><span class="lgn">Fried rice &middot; a local legend</span><b>Ryuh&#333;</b></span>
+</button>
+<button type="button" class="ltile" data-pop="lpop-canal">
+<img src="img/canal.jpg" alt="Photo: CANAL CAFE by the canal" loading="lazy">
+<span class="lcb"><span class="lgn">Terrace caf&eacute; &middot; a longer rest</span><b>CANAL CAFE</b></span>
+</button>
+</div>
+<p class="lasof">Hours from Tabelog and official listings, checked on 11 Nov 2026. Photos are examples of the food, except CANAL CAFE, which is the place itself.</p>
+</div>
+</div>
+<div class="know">
+<div class="col">
+<h2>GOOD FOR</h2>
+<ul>
+<li>A family of three generations &mdash; history and old buildings for the grown-ups, Pok&eacute;mon for the youngest</li>
+<li>Seeing the everyday Tokyo that locals live in, not the postcard version</li>
+<li>Leaving with the trains figured out &mdash; gates, Suica and platforms, practised twice in one day</li>
+</ul>
+</div>
+</div>
+<div class="know">
+<div class="col">
+<h2>KEEP IN MIND</h2>
+<ul>
+<li>We keep a relaxed pace, with benches and caf&eacute; breaks along the way, and take lifts and escalators rather than stairs wherever we can</li>
+<li>Kagurazaka is a hill town and the lanes are stone-paved &mdash; comfortable shoes help</li>
+<li>Two of the lunch places take no reservations, and the soba shop is cash only &mdash; we choose together with that in mind</li>
+<li>On busy days Pok&eacute;mon Center Mega Tokyo may hand out timed entry tickets &mdash; we check its official page that morning</li>
+</ul>
+</div>
+</div>
+<div class="col">
+<div class="bar">
+<h2>OFFICIAL LINKS</h2>
+</div>
+<div class="bt">
+<a class="btn" href="https://shop.pokemon.co.jp/ja/shop/pokemoncenter-megatokyo/" target="_blank" rel="noopener">Pok&eacute;mon Center Mega Tokyo <i>&nearr;</i></a>
+</div>
+<div class="bt">
+<a class="btn" href="https://shop.pokemon.co.jp/ja/shop/pokemoncafe-pikachusweets/" target="_blank" rel="noopener">Pikachu Sweets <i>&nearr;</i></a>
+</div>
+<div class="bt">
+<a class="btn" href="https://www.pokemongo.jp/golab/" target="_blank" rel="noopener">Pok&eacute;mon GO Lab. <i>&nearr;</i></a>
+</div>
+</div>
+<details class="crd">
+<summary>Photo credits and sources</summary>
+<p class="cr">Photos, all via Wikimedia Commons: Daderot (Kagurazaka in the evening; CANAL CAFE, CC0), Kabacchi (the Bishamonten statue at Zenkoku-ji, CC BY 2.0), Higa4 (the torii of Akagi Shrine, CC0), Kazuhiko Maeda (Hyogo Yokocho, CC BY 2.0), Maplestrip (the entrance and shelves of Pok&eacute;mon Center Mega Tokyo; the entrance of Sunshine City, CC BY 3.0). The Pok&eacute;mon GO Lab. photo shows the Pok&eacute;mon Center Mega Tokyo floor it is part of, and the Pikachu Sweets photo shows Sunshine City, the building it is in. Lunch photos are examples of the dishes &mdash; pelican (soba and tempura, CC BY-SA 2.0), Leila Izachi (a set meal, CC BY-SA 4.0), David Pursehouse (fried rice, CC BY 2.0) &mdash; except CANAL CAFE, which is the place itself. Opening hours: Pok&eacute;mon Center Mega Tokyo, Pikachu Sweets and Pok&eacute;mon GO Lab. from their official sites; Zenkoku-ji from its Enjoy Tokyo listing; Akagi Shrine from shrine listings; the lunch places from Tabelog and Hotpepper, with Kyorakutei cross-checked against Michelin listings &mdash; all checked on 11 November 2026. The map is a simple sketch, not to scale, and the positions of the places are approximate. Times on the day are approximate and can move.</p>
+</details>
+<script>
+(function(){var coarse=matchMedia('(pointer:coarse)').matches,onPin=null;
+document.querySelectorAll('.pin').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();if(coarse&&onPin!==a){if(onPin)onPin.classList.remove('on');onPin=a;a.classList.add('on');return}var c=document.getElementById('p'+a.dataset.n);if(!c)return;c.scrollIntoView({behavior:'smooth',block:'start'});c.classList.add('hit');setTimeout(function(){c.classList.remove('hit')},1600);if(onPin){onPin.classList.remove('on');onPin=null}})});
+document.getElementById('map').addEventListener('click',function(ev){if(!ev.target.closest('.pin')&&onPin){onPin.classList.remove('on');onPin=null}});})();
+</script>
+<dialog class="lpop" id="lpop-kyorakutei" aria-label="Kyorakutei">
+<button type="button" class="pclose" aria-label="Close">&#10005;</button>
+<img class="pimg" src="img/soba.jpg" alt="Example photo: soba with tempura">
+<div class="pbody">
+<p class="lgn">Soba &middot; hand-made</p>
+<h3>Kyorakutei</h3>
+<p class="ljp" lang="ja">&#30707;&#33285;&#25475;&#12365;&#25163;&#25171; &#34101;&#27005;&#20141;</p>
+<p class="pt">Hand-made soba, milled in the shop, in a small room of 27 seats &mdash; the soba name Kagurazaka locals give first. The ten-zaru, soba with tempura, is the order.</p>
+<p class="rt">Lunch 11:30 to 15:00, Tuesday to Saturday &middot; closed Sundays, Mondays and holidays<br>Kagurazaka 3-6, a few minutes from the lanes</p>
+<p class="pp"><span class="py">&yen;&yen;</span> Lunch &yen;1,000&ndash;&yen;2,000</p>
+<p class="lnote">Cash only, and small &mdash; we aim a little before 12:00.</p>
+<p class="pl">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kyorakutei+Kagurazaka" target="_blank" rel="noopener">Map &#8599;</a>
+</p>
+<p class="pc">Photo: example of the dish, not the shop. Soba and tempura combo by pelican, CC BY-SA 2.0, via Wikimedia Commons. Hours from Tabelog listings, cross-checked against Michelin guides.</p>
+</div>
+</dialog>
+<dialog class="lpop" id="lpop-saryo" aria-label="Kagurazaka Saryo">
+<button type="button" class="pclose" aria-label="Close">&#10005;</button>
+<img class="pimg" src="img/saryo.jpg" alt="Example photo: a Japanese set meal">
+<div class="pbody">
+<p class="lgn">Set meals &middot; matcha sweets</p>
+<h3>Kagurazaka Saryo</h3>
+<p class="ljp" lang="ja">&#31070;&#27005;&#22338; &#33590;&#23572; &#26412;&#24215;</p>
+<p class="pt">A renovated old house serving Kyoto-style obanzai set meals &mdash; rice with a spread of small seasonal dishes &mdash; and the matcha sweets it is known for. The calm, sit-down Japanese option.</p>
+<p class="rt">11:30 to 22:00, every day (food last order 20:00)<br>Kagurazaka 3-1, just off the main slope</p>
+<p class="lnote">No reservations &mdash; walk-in only, so we go a little before 12:00.</p>
+<p class="pl">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Kagurazaka+Saryo" target="_blank" rel="noopener">Map &#8599;</a>
+</p>
+<p class="pc">Photo: example of the dish, not the shop. Tonjiru teishoku by Leila Izachi, CC BY-SA 4.0, via Wikimedia Commons. Hours from Hotpepper and Tabelog.</p>
+</div>
+</dialog>
+<dialog class="lpop" id="lpop-ryuho" aria-label="Ryuho">
+<button type="button" class="pclose" aria-label="Close">&#10005;</button>
+<img class="pimg" src="img/ryuho.jpg" alt="Example photo: fried rice">
+<div class="pbody">
+<p class="lgn">Chinese &middot; famous fried rice</p>
+<h3>Ryuh&#333;</h3>
+<p class="ljp" lang="ja">&#40845;&#26379;</p>
+<p class="pt">A neighbourhood Chinese restaurant in a basement by Kagurazaka Station, famous across Tokyo for one thing: its fried rice &mdash; the dish most of the room is eating. No frills, all flavour.</p>
+<p class="rt">Monday to Saturday 11:00 to 22:00 &middot; closed Sundays<br>Yarai-cho 123, basement &mdash; 1 min from Kagurazaka Station</p>
+<p class="lnote">No reservations &mdash; walk-in only.</p>
+<p class="pl">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Ryuho+Kagurazaka" target="_blank" rel="noopener">Map &#8599;</a>
+</p>
+<p class="pc">Photo: example of the dish, not the shop. Cha-han (Fried Rice) by David Pursehouse, CC BY 2.0, via Wikimedia Commons. Hours from Tabelog.</p>
+</div>
+</dialog>
+<dialog class="lpop" id="lpop-canal" aria-label="CANAL CAFE">
+<button type="button" class="pclose" aria-label="Close">&#10005;</button>
+<img class="pimg" src="img/canal.jpg" alt="Photo: CANAL CAFE by the canal">
+<div class="pbody">
+<p class="lgn">Terrace caf&eacute; &middot; a longer rest</p>
+<h3>CANAL CAFE</h3>
+<p class="ljp" lang="ja">&#12459;&#12490;&#12523;&#12459;&#12501;&#12455;</p>
+<p class="pt">The comfort option: Italian plates on a wide wooden deck over the canal by Iidabashi, a few minutes from the lanes &mdash; open air, plenty of room, and no hurry to leave.</p>
+<p class="rt">Monday to Saturday 11:30 to 22:00 &middot; weekday lunch last order 14:00<br>Kagurazaka 1-9, by the canal</p>
+<p class="pl">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=CANAL+CAFE+Iidabashi" target="_blank" rel="noopener">Map &#8599;</a>
+</p>
+<p class="pc">Photo: CANAL CAFE itself. Canal Cafe - Tokyo, Japan - DSC04973.jpg by Daderot, CC0, via Wikimedia Commons. Hours from Tabelog.</p>
+</div>
+</dialog>
+<script>document.querySelectorAll(".ltile").forEach(b=>{b.addEventListener("click",()=>{var d=document.getElementById(b.dataset.pop);if(d&&d.showModal)d.showModal()})});document.querySelectorAll(".lpop").forEach(d=>{d.querySelector(".pclose").addEventListener("click",()=>d.close());d.addEventListener("click",e=>{if(e.target===d)d.close()})});if(location.search.indexOf("open=")>-1){var id="lpop-"+new URLSearchParams(location.search).get("open");var t=document.getElementById(id);if(t)setTimeout(()=>t.showModal(),500)}</script>
+<script>document.getElementById("copyLink").addEventListener("click",function(){var b=this,u="https://yukitchy.github.io/kagurazaka-ikebukuro-dec10/";function done(){b.classList.add("done");setTimeout(function(){b.classList.remove("done")},1800)}function fallback(){var t=document.createElement("textarea");t.value=u;document.body.appendChild(t);t.select();try{document.execCommand("copy");done()}catch(e){}document.body.removeChild(t)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done).catch(fallback)}else{fallback()}});</script>
+</body>
+</html>
