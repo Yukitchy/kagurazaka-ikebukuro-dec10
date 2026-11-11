@@ -11,15 +11,15 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23D9342B%22/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F1EFEA;--ink:#121212;--red:#D9342B;--mu:#5D5A54}
+:root{--bg:#F1EFEA;--ink:#121212;--red:#D9342B;--green:#1E9E4A;--mu:#5D5A54}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;font:16px/1.5 Archivo,"Noto Sans JP",sans-serif}
 .col{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3,.big,.tn,.no{font-family:Archivo,"Noto Sans JP",sans-serif;font-stretch:62%;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}
 .top{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:13px;letter-spacing:.14em;padding:18px 0 8px;border-bottom:4px solid var(--ink)}.topr{display:flex;align-items:center;gap:10px}
-h1{margin:14px 0 14px;font-size:clamp(44px,13vw,72px);line-height:.92}h1 em{font-style:normal;color:var(--red);border-bottom:.06em solid var(--red);padding-bottom:.02em}
-.hero{position:relative;overflow:hidden}.hero img{display:block;width:100%;height:auto}.hero .sl2{position:absolute;inset:0;height:100%;object-fit:cover;opacity:0;transition:opacity 1.1s ease}.hero .sl2.on{opacity:1}.hero .vt{display:grid}.hero .vt span{grid-area:1/1;opacity:0;transition:opacity .8s ease}.hero .vt span.on{opacity:1}.hdots{position:absolute;right:12px;bottom:12px;display:flex;gap:7px;z-index:3}.hdots button{width:11px;height:11px;border-radius:50%;border:2px solid #fff;background:rgba(0,0,0,.25);padding:0;cursor:pointer}.hdots button.on{background:#D9342B;border-color:#D9342B}
-.vt{position:absolute;left:14px;top:0;background:var(--red);color:#fff;font:900 34px/1.05 "Noto Sans JP",sans-serif;writing-mode:vertical-rl;padding:12px 10px;letter-spacing:.06em}
+h1{margin:14px 0 14px;font-size:clamp(44px,13vw,72px);line-height:.92}h1 em{font-style:normal;color:var(--red)}h1 em.g{color:var(--green)}
+.hero{position:relative;overflow:hidden}.hero img{display:block;width:100%;height:auto}.hero .sl2{position:absolute;inset:0;height:100%;object-fit:cover;opacity:0;transition:opacity 1.1s ease}.hero .sl2.on{opacity:1}.hero .vt{display:grid;padding:0}.hero .vt span{grid-area:1/1;opacity:0;transition:opacity .8s ease;padding:12px 10px}.hero .vt span.on{opacity:1}.hero .vt span:first-child{background:var(--red)}.hero .vt span:last-child{background:var(--green)}.hdots{position:absolute;right:12px;bottom:12px;display:flex;gap:7px;z-index:3}.hdots button{width:11px;height:11px;border-radius:50%;border:2px solid #fff;background:rgba(0,0,0,.25);padding:0;cursor:pointer}.hdots button.on{background:#D9342B;border-color:#D9342B}.hdots button:nth-child(2).on{background:var(--green);border-color:var(--green)}
+.vt{position:absolute;left:14px;top:0;background:transparent;color:#fff;font:900 34px/1.05 "Noto Sans JP",sans-serif;writing-mode:vertical-rl;padding:12px 10px;letter-spacing:.06em}
 .hb{background:var(--ink);color:#fff;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 16px;font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase}.hb b{color:#FF7A6E}
 h2.map{margin:30px 0 10px;font-size:34px}
 .maphd{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:30px 0 10px}.maphd h2.map{margin:0}
@@ -33,11 +33,11 @@ h2.map{margin:30px 0 10px;font-size:34px}
 .wall{display:grid;gap:3px;grid-template-columns:1fr 1fr}.wall.w3{grid-template-columns:repeat(3,1fr)}
 .tile{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;color:#fff;text-decoration:none;background:#222}
 .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.85))}
-.no{position:absolute;left:0;top:0;z-index:2;background:var(--ink);padding:3px 9px;font-size:28px;line-height:1.1}.tile.r .no{background:var(--red)}
+.no{position:absolute;left:0;top:0;z-index:2;background:var(--ink);padding:3px 9px;font-size:28px;line-height:1.1}.tile.r .no{background:var(--green)}
 .tn,.tt{position:absolute;left:8px;z-index:2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tt{right:8px;bottom:28px;width:max-content;max-width:calc(100% - 16px);background:var(--red);color:#fff;font:900 13px/1 Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:5px 7px}.tile.r .tt{background:#fff;color:var(--ink)}.tn{right:8px;bottom:8px;font-size:15px;line-height:1;font-weight:800;text-transform:none;font-stretch:100%}.wall.w3 .tt{font-size:11px}.wall.w3 .tn{font-size:13px}
 .card{padding:22px 0 24px;border-bottom:4px solid var(--ink);scroll-margin-top:8px}
-.hd{display:flex;gap:12px;align-items:center;margin-bottom:10px}.big{font-size:72px;line-height:.85;color:var(--red)}.card.r .big{color:var(--ink)}
-.hd h3{margin:6px 0 0;font-size:22px;line-height:1}.genre{display:inline-block;background:var(--red);color:#fff;font:900 14px/1 Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px}.card.r .genre{background:var(--ink)}
+.hd{display:flex;gap:12px;align-items:center;margin-bottom:10px}.big{font-size:72px;line-height:.85;color:var(--red)}.card.r .big{color:var(--green)}
+.hd h3{margin:6px 0 0;font-size:22px;line-height:1}.genre{display:inline-block;background:var(--red);color:#fff;font:900 14px/1 Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px}.card.r .genre{background:var(--green)}
 .ph{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
 .jp{margin:14px 0 6px;font:900 28px/1.2 "Noto Sans JP",sans-serif}
 .tx{margin:0 0 10px;font-size:16px}
@@ -91,11 +91,11 @@ h2.map{margin:30px 0 10px;font-size:34px}
 </button>
 </span>
 </div>
-<h1>Places to visit in <em>Kagurazaka</em> &amp; Ikebukuro</h1>
+<h1>Places to visit in <em>Kagurazaka</em> &amp; <em class="g">Ikebukuro</em></h1>
 </div>
 <div class="col" style="padding:0">
 <div class="hero" id="hero">
-<img src="img/hero.jpg" alt="Kagurazaka in the evening">
+<img src="img/hero.jpg" alt="Kagurazaka main street in the daytime">
 <img class="sl2" src="img/mega.jpg" alt="Pokémon Center Mega Tokyo in Ikebukuro">
 <div class="vt"><span class="on">神楽坂</span><span>池袋</span></div>
 <div class="hdots"><button type="button" class="on" aria-label="Show Kagurazaka"></button><button type="button" aria-label="Show Ikebukuro"></button></div>
@@ -432,7 +432,7 @@ h2.map{margin:30px 0 10px;font-size:34px}
 </div>
 <details class="crd">
 <summary>Photo credits and sources</summary>
-<p class="cr">Photos, all via Wikimedia Commons: Daderot (Kagurazaka in the evening; CANAL CAFE, CC0), Kabacchi (the gate of Zenkoku-ji, CC BY 2.0), Higa4 (the torii of Akagi Shrine, CC0), Kazuhiko Maeda (Hyogo Yokocho, CC BY 2.0), Maplestrip (the entrance and shelves of Pok&eacute;mon Center Mega Tokyo; the entrance of Sunshine City, CC BY 3.0). The Pok&eacute;mon GO Lab. photo shows the Pok&eacute;mon Center Mega Tokyo floor it is part of, and the Pikachu Sweets photo shows Sunshine City, the building it is in. Lunch photos are examples of the dishes &mdash; pelican (soba and tempura, CC BY-SA 2.0), Leila Izachi (a set meal, CC BY-SA 4.0), David Pursehouse (fried rice, CC BY 2.0) &mdash; except CANAL CAFE, which is the place itself. Opening hours: Pok&eacute;mon Center Mega Tokyo, Pikachu Sweets and Pok&eacute;mon GO Lab. from their official sites; Zenkoku-ji from its Enjoy Tokyo listing; Akagi Shrine from shrine listings; the lunch places from Tabelog and Hotpepper, with Kyorakutei cross-checked against Michelin listings &mdash; all checked on 11 November 2026. The map is a simple sketch, not to scale, and the positions of the places are approximate. Times on the day are approximate and can move.</p>
+<p class="cr">Photos, all via Wikimedia Commons: Japanexperterna.se (Kagurazaka in the daytime, CC BY-SA 3.0), Daderot (CANAL CAFE, CC0), Kabacchi (the gate of Zenkoku-ji, CC BY 2.0), Higa4 (the torii of Akagi Shrine, CC0), Kazuhiko Maeda (Hyogo Yokocho, CC BY 2.0), Maplestrip (the entrance and shelves of Pok&eacute;mon Center Mega Tokyo; the entrance of Sunshine City, CC BY 3.0). The Pok&eacute;mon GO Lab. photo shows the Pok&eacute;mon Center Mega Tokyo floor it is part of, and the Pikachu Sweets photo shows Sunshine City, the building it is in. Lunch photos are examples of the dishes &mdash; pelican (soba and tempura, CC BY-SA 2.0), Leila Izachi (a set meal, CC BY-SA 4.0), David Pursehouse (fried rice, CC BY 2.0) &mdash; except CANAL CAFE, which is the place itself. Opening hours: Pok&eacute;mon Center Mega Tokyo, Pikachu Sweets and Pok&eacute;mon GO Lab. from their official sites; Zenkoku-ji from its Enjoy Tokyo listing; Akagi Shrine from shrine listings; the lunch places from Tabelog and Hotpepper, with Kyorakutei cross-checked against Michelin listings &mdash; all checked on 11 November 2026. The map is a simple sketch, not to scale, and the positions of the places are approximate. Times on the day are approximate and can move.</p>
 </details>
 <script>
 (function(){var coarse=matchMedia('(pointer:coarse)').matches,onPin=null;
