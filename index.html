@@ -18,7 +18,7 @@ body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;font:16px
 h1,h2,h3,.big,.tn,.no{font-family:Archivo,"Noto Sans JP",sans-serif;font-stretch:62%;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}
 .top{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:13px;letter-spacing:.14em;padding:18px 0 8px;border-bottom:4px solid var(--ink)}.topr{display:flex;align-items:center;gap:10px}
 h1{margin:14px 0 14px;font-size:clamp(44px,13vw,72px);line-height:.92}h1 em{font-style:normal;color:var(--red);border-bottom:.06em solid var(--red);padding-bottom:.02em}
-.hero{position:relative}.hero img{display:block;width:100%;height:auto}
+.hero{position:relative;overflow:hidden}.hero img{display:block;width:100%;height:auto}.hero .sl2{position:absolute;inset:0;height:100%;object-fit:cover;opacity:0;transition:opacity 1.1s ease}.hero .sl2.on{opacity:1}.hero .vt{display:grid}.hero .vt span{grid-area:1/1;opacity:0;transition:opacity .8s ease}.hero .vt span.on{opacity:1}.hdots{position:absolute;right:12px;bottom:12px;display:flex;gap:7px;z-index:3}.hdots button{width:11px;height:11px;border-radius:50%;border:2px solid #fff;background:rgba(0,0,0,.25);padding:0;cursor:pointer}.hdots button.on{background:#D9342B;border-color:#D9342B}
 .vt{position:absolute;left:14px;top:0;background:var(--red);color:#fff;font:900 34px/1.05 "Noto Sans JP",sans-serif;writing-mode:vertical-rl;padding:12px 10px;letter-spacing:.06em}
 .hb{background:var(--ink);color:#fff;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 16px;font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase}.hb b{color:#FF7A6E}
 h2.map{margin:30px 0 10px;font-size:34px}
@@ -94,10 +94,15 @@ h2.map{margin:30px 0 10px;font-size:34px}
 <h1>Places to visit in <em>Kagurazaka</em> &amp; Ikebukuro</h1>
 </div>
 <div class="col" style="padding:0">
-<div class="hero">
+<div class="hero" id="hero">
 <img src="img/hero.jpg" alt="Kagurazaka in the evening">
-<div class="vt">神楽坂</div>
+<img class="sl2" src="img/mega.jpg" alt="Pokémon Center Mega Tokyo in Ikebukuro">
+<div class="vt"><span class="on">神楽坂</span><span>池袋</span></div>
+<div class="hdots"><button type="button" class="on" aria-label="Show Kagurazaka"></button><button type="button" aria-label="Show Ikebukuro"></button></div>
 </div>
+<script>
+(function(){var h=document.getElementById('hero');if(!h)return;var sl=h.querySelector('.sl2'),vt=h.querySelectorAll('.vt span'),dt=h.querySelectorAll('.hdots button'),cur=0,timer=null;function show(n){cur=n;sl.classList.toggle('on',n===1);for(var i=0;i<2;i++){vt[i].classList.toggle('on',i===n);dt[i].classList.toggle('on',i===n);}}function auto(){timer=setInterval(function(){show(1-cur);},4500);}for(var i=0;i<2;i++){(function(n){dt[n].addEventListener('click',function(){if(timer)clearInterval(timer);show(n);auto();});})(i);}auto();})();
+</script>
 <div class="hb">
 <span>Thu 10 Dec &middot; 10:30 to 15:30</span>
 <b>Meet at JR Kyushu Hotel Blossom Shinjuku</b>
