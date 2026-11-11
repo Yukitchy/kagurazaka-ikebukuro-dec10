@@ -24,7 +24,7 @@ h1{margin:14px 0 14px;font-size:clamp(44px,13vw,72px);line-height:.92}h1 em{font
 h2.map{margin:30px 0 10px;font-size:34px}
 .maphd{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:30px 0 10px}.maphd h2.map{margin:0}
 #map{display:block;width:100%;height:auto;border:4px solid var(--ink)}
-#map text{font-family:Archivo,sans-serif;pointer-events:none}
+#map text{font-family:Archivo,sans-serif;pointer-events:none}#map2{display:block;width:100%;height:auto;border:4px solid var(--ink);margin-top:14px}#map2 text{font-family:Archivo,sans-serif;pointer-events:none}#map2 .pin:hover .fr,#map2 .pin.on .fr{stroke:var(--green)}
 .pin{cursor:pointer}.pin .lbl{display:none}.pin:hover .lbl,.pin:focus .lbl,.pin.on .lbl{display:block}.pin:hover .fr,.pin.on .fr{stroke:#D9342B}
 .card.hit{outline:4px solid var(--red);outline-offset:6px}
 .lg{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0 0;font-size:14px;font-weight:700}.lg i{display:inline-block;width:14px;height:14px;background:var(--ink);margin-right:6px;vertical-align:-2px}.lg i.r{background:var(--red)}
@@ -148,7 +148,6 @@ h2.map{margin:30px 0 10px;font-size:34px}
 <div class="maphd">
 <h2 class="map">The map</h2>
 </div>
-<p class="gp">The Kagurazaka morning in one sketch. Tap a pin to see the name, tap again to jump to the place.</p>
 <svg id="map" viewBox="195 -6 420 478" role="img" aria-label="Simple sketch map of the three Kagurazaka places">
 <defs>
 <clipPath id="pc1"><rect x="-21" y="-49" width="42" height="39" rx="2"/></clipPath>
@@ -196,6 +195,58 @@ h2.map{margin:30px 0 10px;font-size:34px}
 <image href="img/lanes.jpg" x="-21" y="-49" width="42" height="39" preserveAspectRatio="xMidYMid slice" clip-path="url(#pc3)"/>
 <text y="-52" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">3</text>
 <g class="lbl"><rect x="-65" y="-94" width="130" height="26" fill="#121212"/><text y="-76" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">Hyogo Yokocho</text></g>
+</g>
+</a>
+</svg>
+<svg id="map2" viewBox="195 -6 420 478" role="img" aria-label="Simple sketch map of the three Ikebukuro places in Sunshine City">
+<defs>
+<clipPath id="pc4"><rect x="-21" y="-49" width="42" height="39" rx="2"/></clipPath>
+<clipPath id="pc5"><rect x="-21" y="-49" width="42" height="39" rx="2"/></clipPath>
+<clipPath id="pc6"><rect x="-21" y="-49" width="42" height="39" rx="2"/></clipPath>
+</defs>
+<rect x="150" y="-60" width="520" height="600" fill="#F6F1E6"/>
+<line x1="70" y1="-60" x2="70" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="205" y1="-60" x2="205" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="340" y1="-60" x2="340" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="470" y1="-60" x2="470" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="560" y1="-60" x2="560" y2="540" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="70" x2="670" y2="70" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="200" x2="670" y2="200" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="330" x2="670" y2="330" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="470" x2="670" y2="470" stroke="#fff" stroke-width="16"/>
+<line x1="150" y1="600" x2="670" y2="600" stroke="#fff" stroke-width="16"/>
+<rect x="262" y="58" width="300" height="235" fill="#E4E0D6"/>
+<circle cx="410" cy="172" r="150" fill="none" stroke="#121212" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="412" y="284" text-anchor="middle" font-size="14" font-weight="800" fill="#121212">SUNSHINE CITY</text>
+<rect x="222" y="338" width="150" height="44" fill="#E4E0D6"/>
+<text x="297" y="358" text-anchor="middle" font-size="14" font-weight="800" fill="#121212">IKEBUKURO</text>
+<text x="297" y="375" text-anchor="middle" font-size="14" font-weight="800" fill="#121212">STATION</text>
+<text x="405" y="450" text-anchor="middle" font-size="13" font-weight="700" fill="#5D5A54">dashed circle: Sunshine City, all under one roof</text>
+<a class="pin" href="#p4" data-n="4">
+<g transform="translate(322 150)">
+<polygon points="-6,-8 6,-8 0,0" fill="#121212"/>
+<rect class="fr" x="-23" y="-64" width="46" height="56" rx="3" fill="#121212" stroke="#fff" stroke-width="1.5"/>
+<image href="img/mega.jpg" x="-21" y="-49" width="42" height="39" preserveAspectRatio="xMidYMid slice" clip-path="url(#pc4)"/>
+<text y="-52" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">4</text>
+<g class="lbl"><rect x="-66" y="-94" width="132" height="26" fill="#121212"/><text y="-76" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">Pokémon Center</text></g>
+</g>
+</a>
+<a class="pin" href="#p5" data-n="5">
+<g transform="translate(486 150)">
+<polygon points="-6,-8 6,-8 0,0" fill="#121212"/>
+<rect class="fr" x="-23" y="-64" width="46" height="56" rx="3" fill="#121212" stroke="#fff" stroke-width="1.5"/>
+<image href="img/golab.jpg" x="-21" y="-49" width="42" height="39" preserveAspectRatio="xMidYMid slice" clip-path="url(#pc5)"/>
+<text y="-52" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">5</text>
+<g class="lbl"><rect x="-42" y="-94" width="84" height="26" fill="#121212"/><text y="-76" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">GO Lab.</text></g>
+</g>
+</a>
+<a class="pin" href="#p6" data-n="6">
+<g transform="translate(410 250)">
+<polygon points="-6,-8 6,-8 0,0" fill="#121212"/>
+<rect class="fr" x="-23" y="-64" width="46" height="56" rx="3" fill="#121212" stroke="#fff" stroke-width="1.5"/>
+<image href="img/sweets.jpg" x="-21" y="-49" width="42" height="39" preserveAspectRatio="xMidYMid slice" clip-path="url(#pc6)"/>
+<text y="-52" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">6</text>
+<g class="lbl"><rect x="-69" y="-94" width="138" height="26" fill="#121212"/><text y="-76" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">Pikachu Sweets</text></g>
 </g>
 </a>
 </svg>
@@ -437,7 +488,7 @@ h2.map{margin:30px 0 10px;font-size:34px}
 <script>
 (function(){var coarse=matchMedia('(pointer:coarse)').matches,onPin=null;
 document.querySelectorAll('.pin').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();if(coarse&&onPin!==a){if(onPin)onPin.classList.remove('on');onPin=a;a.classList.add('on');return}var c=document.getElementById('p'+a.dataset.n);if(!c)return;c.scrollIntoView({behavior:'smooth',block:'start'});c.classList.add('hit');setTimeout(function(){c.classList.remove('hit')},1600);if(onPin){onPin.classList.remove('on');onPin=null}})});
-document.getElementById('map').addEventListener('click',function(ev){if(!ev.target.closest('.pin')&&onPin){onPin.classList.remove('on');onPin=null}});})();
+document.getElementById('map').addEventListener('click',function(ev){if(!ev.target.closest('.pin')&&onPin){onPin.classList.remove('on');onPin=null}});document.getElementById('map2').addEventListener('click',function(ev){if(!ev.target.closest('.pin')&&onPin){onPin.classList.remove('on');onPin=null}});})();
 </script>
 <dialog class="lpop" id="lpop-kyorakutei" aria-label="Kyorakutei">
 <button type="button" class="pclose" aria-label="Close">&#10005;</button>
